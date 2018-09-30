@@ -33,7 +33,6 @@ new Vue({
       return this.cards.concat(this.cards);
     },
     isWin: function() {
-
       return this.right === 20;
     }
   },
