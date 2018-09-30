@@ -1,0 +1,16 @@
+{
+  "name": "memory-game-vuejs",
+  "version": "1.0.0",
+  "description": "",
+  "home": "https://namthit98.github.io/memory-game-vuejs",
+  "main": "app.js",
+  "scripts": {
+    "deploy": "gh-pages -d build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gh-pages": "^2.0.0"
+  }
+}
