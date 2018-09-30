@@ -14,7 +14,7 @@
 <body>
 
   <div id="game">
-    <div class="card" v-for="card in processCards" :style="randomOrder()" @click="clickOnCard"> 
+    <div class="card" v-for="card in processCards" :style="randomOrder()" @click="clickOnCard" v-once> 
       <img src="img/vuejs-original.svg" alt="vuejs" class="front"/>
       <img :src="'img/' + card" :alt="card" :data-key="card.split('-')[0]" class="back"/>
     </div>
