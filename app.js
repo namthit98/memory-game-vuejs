@@ -42,7 +42,7 @@ new Vue({
       var num = Math.floor(Math.random() * 100);
 
       return {
-        order: 1
+        order: num
       };
     },
     clickOnCard: function(event) {
