@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- development version, includes helpful console warnings -->
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <link rel="stylesheet" href="./main.css">
+  <title>Memory game - VueJS</title>
+</head>
+
+<body>
+
+  <div id="game">
+    <div class="card" v-for="card in processCards" :style="randomOrder()" @click="clickOnCard"> 
+      <img src="img/vuejs-original.svg" alt="vuejs" class="front"/>
+      <img :src="'img/' + card" :alt="card" :data-key="card.split('-')[0]" class="back"/>
+    </div>
+
+    <div class="notification" v-if="isWin">
+      WIN !!!!!!
+    </div>
+  </div>
+
+  <script src="./app.js"></script>
+</body>
+
+</html>
